@@ -16,6 +16,7 @@ class Model_Menu_Perfil extends CI_Model {
         return $query->result();
     }
 
+   
     function allFiltered($field, $value) {
         $this->db->select('menu_perfil.* , menu.name as menu_name , perfil.name as perfil_name');
         $this->db->from('menu_perfil');

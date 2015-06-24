@@ -15,12 +15,7 @@
                         <ul class="nav">
                             <?= my_menu_ppal(); ?>
                         </ul>
-                        <ul class="nav">
-                            <?= form_open('agenda/search', array('class'=>'form-search')); ?>
-                                <?= form_input(array('type'=>'text', 'name'=>'buscar', 'id'=>'buscar', 'placeholder'=>'Buscar por Evento', 'class'=>'input-medium search-query')); ?>
-                                <?= form_button(array('type'=>'submit', 'content'=>'<i class="icon-search"> </i>', 'class'=>'btn')); ?>
-                            <?= form_close(); ?>
-                        </ul>
+                   
                         
                     </div>
 
@@ -33,7 +28,7 @@
 		<div class="container-fluid">
             <div class="row-fluid">
             	<!-- Menú del sistema -->
-                <div class="span3">
+                <div class="span1">
                     <div class="well sidebar-nav">
                         <ul class="nav nav-list">
                             <li class="nav-header"> Menú Usuario </li>
@@ -43,7 +38,7 @@
                 </div>
 
                 <!-- Contenido de la aplicación -->
-                <div class="span9">
+                <div class="span11">
                 	<?= $this->load->view($contenido) ?>
                 </div>
             </div>

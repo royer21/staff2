@@ -16,7 +16,6 @@ class Model_Agenda extends CI_Model {
 
     function allfiltered_index($inicio=FALSE,$limite=FALSE) {
         $this->db->order_by('fecha','desc');
-  
         $this->db->like('asistencia','si');
         $query = $this->db->get('agenda');
         return $query->result();
@@ -24,7 +23,6 @@ class Model_Agenda extends CI_Model {
 
     function allfiltered($field,$value) {
     	$this->db->like($field,$value);
-              
         $query = $this->db->get('agenda');
         return $query->result();
     }

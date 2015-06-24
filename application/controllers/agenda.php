@@ -13,11 +13,14 @@ class Agenda extends CI_Controller {
 		$this->form_validation->set_message('norep', 'Existe un registro con el mismo %s');
 	}
 
+
+
 	public function index() {
 
 		$inicio= 0;
 		$limite= 1;
-	
+		
+			
 	
 		$config['base_url']=base_url().'Agenda/index/';
 		$config['total_rows']= count($this->Model_Agenda->allfiltered_index());

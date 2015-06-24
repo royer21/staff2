@@ -9,6 +9,9 @@
 
 	<?= my_validation_errors(validation_errors()); ?>
 
+	<?php	$opciones=$this->Model_Persona->get_bases(); ?>
+	<?php	$opciones2=$this->Model_Persona->get_areas(); ?>
+
 	<div class="control-group">
 		<?= form_label('ID', 'id', array('class'=>'control-label')); ?>
 		<span class="uneditable-input"><?= $registro->id ;?></span>
