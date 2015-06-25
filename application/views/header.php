@@ -29,6 +29,14 @@
 
 $(document).ready( function () {
     $('#example').dataTable( {
+    	"language": {
+    		"lengthMenu": "Mostrando _MENU_ registros por página",
+    		"zeroRecords": "No se encontraron registros",
+    		"info": "Mostrando _START_ de _END_ de _TOTAL_ registros",
+    		"infoEmpty": "No se encontraron coincidencias",
+    		"infoFiltered": "(filtrado de _MAX_ registros)",
+    		"search": "Buscar"
+    	},
         "dom": 'T<"clear">lfrtip',
         "tableTools": {
             "sSwfPath": "/swf/copy_csv_xls_pdf.swf"
